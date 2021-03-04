@@ -53,8 +53,8 @@ for vec in [vecA, vecB]:
 	else:
 		raise ValueError('Direction angle has not been input properly')
 
-	vec['x'] = vecA['magnitude'] * (math.cos(vecA['angle']))
-	vec['y'] = vecA['magnitude'] * (math.sin(vecA['angle']))
+	vec['x'] = vec['magnitude'] * (math.cos(math.radians(vec['angle'])))
+	vec['y'] = vec['magnitude'] * (math.sin(math.radians(vec['angle'])))
 
 vecC = {'x': vecA['x'] + vecB['x'], 'y': vecA['y'] + vecB['y']}
 
