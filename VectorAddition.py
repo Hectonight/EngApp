@@ -64,9 +64,6 @@ vecC['angle'] = round(math.degrees(math.atan(vecC['y']/vecC['x'])), 1)
 if vecC['angle'] == 0 and vecC['x'] < 0:
 	vecC['angle'] = 180
 
-elif not (0 < vecC['angle'] < 180) and vecC['y'] > 0:
-	vecC['angle'] += 180
-
 while not (180 < vecC['angle']) and vecC['y'] < 0:
 	vecC['angle'] += 180
 
